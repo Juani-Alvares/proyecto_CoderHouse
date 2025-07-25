@@ -89,7 +89,7 @@
 .UltimosModelos-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
   justify-content: center;
 }
 
@@ -140,7 +140,6 @@
 
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
 
 /*Grid-Footer*/
 .footer-medios_de_pago, .footer-sucursales, .footer-contacto {
@@ -272,125 +271,64 @@ h4 {
 footer {
   background-color: rgba(0, 0, 0, 0.662745098);
 }
-/* Formulario-Contacto */
-.formbold-main-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 48px;
-  }
-
-  .formbold-form-wrapper {
-    margin: 0 auto;
-    max-width: 550px;
-    width: 100%;
-    background: white;
-  }
-
-  .formbold-input-flex {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 22px;
-  }
-  .formbold-input-flex > div {
-    width: 50%;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .formbold-textarea {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .formbold-form-input {
-    width: 100%;
-    padding-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid #DDE3EC;
-    background: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    color: #07074D;
-    outline: none;
-    resize: none;
-  }
-  .formbold-form-input::placeholder {
-    color: #536387;
-  }
-  .formbold-form-input:focus {
-    border-color: #6A64F1;
-  }
-  .formbold-form-label {
-    color: #07074D;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    display: block;
-    margin-bottom: 18px;
-  }
-  .formbold-form-input:focus + .formbold-form-label {
-    color: #6A64F1;
-  }
-   
-   .formbold-input-label {
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-  }
-
-  .formbold-btn {
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 12px 25px;
-    border: none;
-    font-weight: 500;
-    background-color: #6A64F1;
-    color: white;
-    cursor: pointer;
-    margin-top: 25px;
-  }
-  .formbold-btn:hover {
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-  }
-  /* mq-formulario */
-@media (max-width: 480px) {
-  .formbold-main-wrapper {
-    padding: 16px;
-  }
-
-  .formbold-btn {
-    width: 100%;
-    padding: 14px;
-    font-size: 15px;
-  }
-
-  .formbold-form-label {
-    font-size: 13px;
-  }
-
-  .formbold-form-input {
-    font-size: 15px;
-  }
+ /*formulario*/
+ .formulario-container{
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
 }
-@media (max-width: 768px) {
-  .formbold-main-wrapper {
-    padding: 24px;
-  }
-
-  .formbold-input-flex {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .formbold-input-flex > div {
-    width: 100%;
-  }
-
-  .formbold-form-wrapper {
-    max-width: 90%;
-  }
+ .container-form{
+  max-width: 50vh;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #1d1b1bc0;
 }
 
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+} 
+.sobre-nosotros-container {
+   display: flex;
+  justify-content: center;     /* Centra horizontalmente */
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;               /* Centra el bloque entero */
+  flex-wrap: wrap;              /* Permite que se acomode en móvil */
+  box-sizing: border-box;
+}
+
+.imagen_sobre_nosotros img {
+  max-width: 30vh;
+  height: auto;
+  border-radius: 30px;
+ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.container_sobre_nosotros {
+  flex: 1;
+  min-width: 2vh;
+}
 /*# sourceMappingURL=style.css.map */
