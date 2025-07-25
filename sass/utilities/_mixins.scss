@@ -1,0 +1,4 @@
+@mixin gridArea($valorUno, $valorDos, $valorTres, $valorCuatro) {
+    grid-area: 
+    #{$valorUno} / #{$valorDos} / #{$valorTres} / #{$valorCuatro};
+}

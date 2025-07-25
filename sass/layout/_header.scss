@@ -1,0 +1,48 @@
+/* Estilos Header */
+.index-header-flex{ 
+    font-size: 20px;
+    padding: 5px;
+    @extend %flexColumn;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+.index-header{
+    background-image: url(../image/header-background.jpg);
+    @extend %header-fotos
+}
+.index-header__sucursales{
+    background-image: url(../image/sucursales-header.jpg);
+    @extend %header-fotos
+}
+.contenedor-inferior-header{
+    @extend %flexColumn;
+    justify-content: center;
+
+    max-width: 30rem;
+    margin-left: 1rem;
+}
+.navegacion-superior ul li a{
+    color: $color_blanco;
+    text-decoration: none;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.index-p , .index-h1{
+    text-align: center;
+    color: $color_blanco;
+
+}
+
+
+.btn-header{
+    width: 100%;
+    background-color: $color_rojo;
+    color: $color_blanco;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 600;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
